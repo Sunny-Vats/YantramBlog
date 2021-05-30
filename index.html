@@ -4,61 +4,147 @@
     <head>
         <meta charset="utf-8">
         <title>🌏 Yantram Classes</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #b4a5a5;
+                color: #151515;
+                margin: 0;
+                padding: 0;
+                font: 300 22px/28px "Helvetica Neue";
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: #301b3f;
+                padding: 10px;
+            }
+
+            header,
+            footer {
+                background-color: #301b3f;
+                margin: 0;
+                padding: 0 50px;
+                color: #b4a5a5;
+            }
+
+            .group::before,
+            .group::after {
+                content: "";
+                display: table;
+            }
+
+            .group::after {
+                clear: both;
+            }
+
+            .group {
+                clear: both;
+            }
+
+            .left {
+                float: left;
+                padding-right: 10px;
+            }
+
+            img {
+                padding-top: 20px;
+            }
+
+            .right {
+                float: right;
+                padding-left: 10px;
+            }
+
+            .right>h1,
+            .right p {
+                color: #b4a5a5;
+                padding: 0;
+            }
+
+            .right a {
+                text-decoration: none;
+                color: #b4a5a5;
+                margin-left: 10px;
+            }
+
+            .right a:hover {
+                color: #f4f5f5;
+                text-decoration: underline;
+            }
+
+            p {
+                padding: 20px 20px 0 20px;
+            }
+
+            main {
+                padding: 0 50px;
+            }
+        </style>
     </head>
 
     <body>
-        <table cellspacing="10" style="background: teal; width: 100%;">
-            <tr>
-                <td>
-                    <img src=" images/profilePic.png" alt="My Profile Pic">
-                </td>
-                <td>
-                    <h1>Sunny's Blog</h1>
-                    <p>
-                        <em>Founder and Tutor of </em>
-                        <strong><a href="https://www.youtube.com/channel/UC_qR-a11AljdFLD91ithS-g" target="_blank">Yantram classes</a></strong>
-                    </p>
-                    <p>Software Engineer at AMDOCS, Gurgaon</p>
-                </td>
-            </tr>
-        </table>
-        <p>
-            I am a Software Engineer at AMDOCS, Gurgaon with Master Degree in Computer Applications. I love &#9749; and teaching students eager to learn and work on themselves sincerely.
-        </p>
-        <p>
-            To enhance my experience and to help thousands of student in this pandemic situation, I am going to start a new channel on YouTube for Core Java Classes. I hope you get the best out of it. There would be some classes to clear doubts of students, if they face some.
-        </p>
-        <hr>
-        <h3>Work and Education</h3>
-        <h4>Education</h4>
-        <ul>
-            <li>2014-17(BCA) IITM, Janakpuri</li>
-            <li>2018-21(MCA) CDAC, Noida</li>
-        </ul>
-        <h4>Work Experience</h4>
-        <table cellspacing="10">
-            <thead>
+        <header class="group">
+            <div class="left">
+                <img src=" images/profilePic.png" alt="My Profile Pic">
+            </div>
+            <div class="right">
+                <h1>Sunny's Blog</h1>
+                <p>
+                    <em>Founder and Tutor of </em>
+                    <strong><a href="https://www.youtube.com/channel/UC_qR-a11AljdFLD91ithS-g" target="_blank">Yantram classes</a></strong>
+                </p>
+                <p>Software Engineer at AMDOCS, Gurgaon</p>
+            </div>
+        </header>
+        <main>
+            <p>
+                I am a Software Engineer at AMDOCS, Gurgaon with Master Degree in Computer Applications. I love &#9749; and teaching students eager to learn and work on themselves sincerely.
+            </p>
+            <p>
+                To enhance my experience and to help thousands of student in this pandemic situation, I am going to start a new channel on YouTube for Core Java Classes. I hope you get the best out of it. There would be some classes to clear doubts of students, if they face some.
+            </p>
+            <hr noshade>
+            <h3>Work and Education</h3>
+            <h4>Education</h4>
+            <ul>
+                <li>2014-17(BCA) IITM, Janakpuri</li>
+                <li>2018-21(MCA) CDAC, Noida</li>
+            </ul>
+            <h4>Work Experience</h4>
+            <table cellspacing="10">
+                <thead>
+                    <tr>
+                        <th>Duration</th>
+                        <th>Place</th>
+                    </tr>
+                </thead>
                 <tr>
-                    <th>Duration</th>
-                    <th>Place</th>
+                    <td>2017-2018</td>
+                    <td>Trainer at NIIT, Janakpuri</td>
                 </tr>
-            </thead>
-            <tr>
-                <td>2017-2018</td>
-                <td>Trainer at NIIT, Janakpuri</td>
-            </tr>
-            <tr>
-                <td>2021-current</td>
-                <td>Software Engineer at AMODOCS, Gurgaon</td>
-            </tr>
-        </table>
-        <h3>Hobbies 😊</h3>
-        <ol type="I">
-            <li>Sketching</li>
-            <li>Casio Playing</li>
-        </ol>
-        <a href="plutoImages.html">My Pet</a>
-        <a href="contactMe.html">Contact Us</a>
+                <tr>
+                    <td>2021-current</td>
+                    <td>Software Engineer at AMODOCS, Gurgaon</td>
+                </tr>
+            </table>
+            <h3>Hobbies 😊</h3>
+            <ol type="I">
+                <li>Sketching</li>
+                <li>Casio Playing</li>
+            </ol>
+        </main>
+        <footer class="group">
+            <div class="right"><a href="plutoImages.html">My Pet Images</a></div>
+            <div class="right"><a href="contactMe.html">Contact Us</a></div>
+        </footer>
     </body>
 
 </html>
