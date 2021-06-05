@@ -1,150 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
     <head>
-        <meta charset="utf-8">
-        <title>🌏 Yantram Classes</title>
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-
-            body {
-                background-color: #b4a5a5;
-                color: #151515;
-                margin: 0;
-                padding: 0;
-                font: 300 22px/28px "Helvetica Neue";
-            }
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                color: #301b3f;
-                padding: 10px;
-            }
-
-            header,
-            footer {
-                background-color: #301b3f;
-                margin: 0;
-                padding: 0 50px;
-                color: #b4a5a5;
-            }
-
-            .group::before,
-            .group::after {
-                content: "";
-                display: table;
-            }
-
-            .group::after {
-                clear: both;
-            }
-
-            .group {
-                clear: both;
-            }
-
-            .left {
-                float: left;
-                padding-right: 10px;
-            }
-
-            img {
-                padding-top: 20px;
-            }
-
-            .right {
-                float: right;
-                padding-left: 10px;
-            }
-
-            .right>h1,
-            .right p {
-                color: #b4a5a5;
-                padding: 0;
-            }
-
-            .right a {
-                text-decoration: none;
-                color: #b4a5a5;
-                margin-left: 10px;
-            }
-
-            .right a:hover {
-                color: #f4f5f5;
-                text-decoration: underline;
-            }
-
-            p {
-                padding: 20px 20px 0 20px;
-            }
-
-            main {
-                padding: 0 50px;
-            }
-        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Yantram Classes-by Sunny</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="birdy.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header class="group">
-            <div class="left">
-                <img src=" images/profilePic.png" alt="My Profile Pic">
+        <div class="container">
+            <img class="top-cloud" src="images/cloud2.png" alt="cloud">
+            <h1>I'm Sunny</h1>
+            <p>Software <span class="pro">Dev</span>eloper</p>
+            <img class="bottom-cloud" src="images/cloud2.png" alt="cloud">
+            <img src="images/mountain.png" alt="mountain">
+        </div>
+        <div class="middle-container">
+            <div class="profile">
+                <img src="images/profilePic.png" alt="Profile Pic">
+                <h2>Hello.</h2>
+                <p>I am currently working at AMDOCS, Gurgaon as a Java Developer with Master Degree in Computer Applications. I had been a teacher at NIIT Janakpuri, Delhi. I love &#9749; and teaching students eager to learn and work on themselves sincerely.</p>
             </div>
-            <div class="right">
-                <h1>Sunny's Blog</h1>
-                <p>
-                    <em>Founder and Tutor of </em>
-                    <strong><a href="https://www.youtube.com/channel/UC_qR-a11AljdFLD91ithS-g" target="_blank">Yantram classes</a></strong>
-                </p>
-                <p>Software Engineer at AMDOCS, Gurgaon</p>
+            <hr>
+            <div class="skills">
+                <h2>My Skills.</h2>
+                <div class="skill-row">
+                    <img class="skill1" src="images/java.png" alt="Image not available.">
+                    <h3>Core Java</h3>
+                    <p>To enhance my experience and to help thousands of student in this pandemic situation, I am going to start a new channel on YouTube for Core Java Classes. I hope you get the best out of it. There would be some classes to clear doubts of students, if they face some.</p>
+                </div>
+                <div class="skill-row">
+                    <img class="skill2" src="images/world-wide-web.png" alt="Image not available.">
+                    <h3>Web Development</h3>
+                    <p>For now, I am not taking any classes on HTML, CSS or any other web development language but as soon as possible, it will become a part of my course after completing core Java. I have experience of teaching HTML and CSS also. Be ready to pull up your sleeves and start coding. I'll be soon at your laptop's screen.</p>
+                </div>
             </div>
-        </header>
-        <main>
-            <p>
-                I am a Software Engineer at AMDOCS, Gurgaon with Master Degree in Computer Applications. I love &#9749; and teaching students eager to learn and work on themselves sincerely.
-            </p>
-            <p>
-                To enhance my experience and to help thousands of student in this pandemic situation, I am going to start a new channel on YouTube for Core Java Classes. I hope you get the best out of it. There would be some classes to clear doubts of students, if they face some.
-            </p>
-            <hr noshade>
-            <h3>Work and Education</h3>
-            <h4>Education</h4>
-            <ul>
-                <li>2014-17(BCA) IITM, Janakpuri</li>
-                <li>2018-21(MCA) CDAC, Noida</li>
-            </ul>
-            <h4>Work Experience</h4>
-            <table cellspacing="10">
-                <thead>
-                    <tr>
-                        <th>Duration</th>
-                        <th>Place</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>2017-2018</td>
-                    <td>Trainer at NIIT, Janakpuri</td>
-                </tr>
-                <tr>
-                    <td>2021-current</td>
-                    <td>Software Engineer at AMODOCS, Gurgaon</td>
-                </tr>
-            </table>
-            <h3>Hobbies 😊</h3>
-            <ol type="I">
-                <li>Sketching</li>
-                <li>Casio Playing</li>
-            </ol>
-        </main>
-        <footer class="group">
-            <div class="right"><a href="plutoImages.html">My Pet Images</a></div>
-            <div class="right"><a href="contactMe.html">Contact Us</a></div>
-        </footer>
+            <div class="icons">
+                <h2>Love the icons used on my web page?</h2>
+                <p>Checkout links mentioned below</p>
+                <p>Icons made by <a href="https://www.freepik.com" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">www.flaticon.com</a></p>
+                <p>Icons made by <a href="https://www.flaticon.com/authors/alfredo-hernandez" target="_blank" title="Alfredo Hernandez">Alfredo Hernandez</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">www.flaticon.com</a></p>
+            </div>
+            <hr>
+            <div class="contact-me">
+                <h2>Get In Touch</h2>
+                <h3>Contact Number: +91&nbsp;7303&nbsp;854&nbsp;824</h3>
+                <p>Address: H.No C-13, Shiv Main Market, Vijay Enclave, New Delhi, Delhi-110045.</p>
+                <a class="btn" href="mailto:ssunnyvvats@outlook.com">CONTACT ME</a>
+            </div>
+        </div>
+
+        <div class="bottom-container">
+            <a class="footer-link" target="_blank" href="https://www.linkedin.com/">LinkedIn</a>
+            <a class="footer-link" target="_blank" href="https://www.youtube.com/channel/UC_qR-a11AljdFLD91ithS-g">YouTube</a>
+            <a class="footer-link" target="_blank" href="https://www.appbrewery.co/">Website</a>
+            <p>© 2021 Sunny Vats @sunny-vats.github.io/YantramBlog.</p>
+        </div>
+
     </body>
 
 </html>
